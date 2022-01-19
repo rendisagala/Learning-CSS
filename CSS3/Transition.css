@@ -1,0 +1,153 @@
+.satu {
+    margin: 0;
+    padding: 0;
+}
+
+.satu .tu {
+    width: 900px;
+    margin: 10px auto;
+    border: 5px solid black;
+}
+
+.satu #durasi {
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    transition: 1s;
+}
+
+.satu #durasi:hover {
+    transform: rotate(180deg);
+}
+
+.satu .wa {
+    width: 900px;
+    margin: 10px auto;
+    border: 5px solid black;
+}
+
+.satu #property {
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    transition: 1s;
+}
+
+.satu .wa:hover #property {
+    transform: rotate(720deg);
+    margin-left: 800px;
+    background-color: royalblue;
+}
+
+.satu .ga {
+    width: 900px;
+    margin: 10px auto;
+    border: 5px solid black;
+}
+
+.satu #property2 {
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    transition: margin-left 1s;
+}
+
+.satu .ga:hover #property2 {
+    transform: rotate(720deg);
+    margin-left: 800px;
+    background-color: crimson;
+}
+
+.satu .pat {
+    width: 900px;
+    margin: 10px auto;
+    border: 5px solid black;
+}
+
+.satu .fungsi {
+    width: 100px;
+    height: 100px;
+    background-color: salmon;
+    transition: all 1s;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bold;
+}
+
+.satu .pat:hover .fungsi {
+    transform: rotate(720deg);
+    margin-left: 800px;
+    background-color: royalblue;
+}
+
+.fungsi.fungsi1 {
+    transition: all 3s ease;
+}
+
+.fungsi.fungsi2 {
+    transition: all 3s ease-in;
+}
+
+.fungsi.fungsi3 {
+    transition: all 3s ease-out;
+}
+
+.fungsi.fungsi4 {
+    transition: all 3s ease-in-out;
+}
+
+.fungsi.fungsi5 {
+    transition: all 3s linear;
+}
+
+.fungsi.fungsi6 {
+    transition: all 3s cubic-bezier(0.24, -0.35, 0.78, 1.46);
+    /* pakai inspect chrome untuk ngukur cberzier */
+    line-height: 30px;
+}
+
+.satu .ma {
+    width: 900px;
+    margin: 10px auto;
+    border: 5px solid black;
+}
+
+.satu .delay {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: 3s;
+}
+
+.satu .ma:hover .delay {
+    transform: rotate(720deg);
+    margin-left: 800px;
+    background-color: crimson;
+    border-radius: 50%;
+}
+
+.delay.delay1 {
+    transition: 3s 2s;
+}
+
+.delay.delay2 {
+    transition: margin-left 3s, border-radius 5s, transform 3s, background-color 500ms 2s;
+}
+
+
+/* tambahan */
+
+body {
+    background-color: grey;
+}
+
+.penjelasan img {
+    width: 500px;
+    height: 100%;
+}
+
+.satu img {
+    width: 500px;
+    height: 100%;
+    filter: opacity(0.8);
+}

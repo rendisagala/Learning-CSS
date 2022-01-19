@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layouting BOX MODEL(padding, border & box sizing)</title>
+    <link rel="stylesheet" href="Box Model(padding, border and box sizing.css">
+</head>
+<body>
+    <p>Margin, berfungsi untuk mengatur jarak elemen HTML dari luar.
+        <br><strong style="color: white;">Sedangkan, padding, berfungsi untuk mengatur jarak elemen HTML dari dalam.</p>
+    <strong>PADDING TIDAK BISA DIBERI NILAI NEGATIF! PADDING JUGA MEMPENGARUHI MARGIN</strong></p>
+    <div class="paddingdanborder">New kinds of geopolitical consensus would ensure that various countries strive to reduce carbon dioxide emissions within their borders. For instance, in 2014, an agreement to combat climate change was signed between the U.S. and China, the two most
+        polluting countries in the world. China agreed to get 20% of its electric power from the sun, wind, fission, and dams. The U.S. promised to enhance its pollution reduction efforts so that the rate of pollution declines by 2% per year (Hawken,
+        2017).</div>
+    <p>Padding juga bisa ditulis seperti margin: <i>atas kirikanan bawah</i></i></p>
+    <p>untuk border, border(left/right/top/bottom):<i> tebal(px) style(jenis) color</i></p>
+    <p><strong>TOTAL DIMENSI = WIDTH/HEIGHT + PADDING + BORDER</strong></p>
+    <h3>Contoh jika dimensi dikalkulasikan (TOTAL DIMENSI = WIDTH/HEIGHT + PADDING + BORDER)</h3>
+    <div class="contohboxsizing">
+    <div class="cthsatu">
+        New kinds of geopolitical consensus would ensure that various countries strive to reduce carbon dioxide emissions within their borders. For instance, in 2014, an agreement to combat climate change was signed between the U.S. and China, the two most
+        polluting countries in the world. China agreed to get 20% of its electric power from the sun, wind, fission, and dams. The U.S. promised to enhance its pollution reduction efforts so that the rate of pollution declines by 2% per year (Hawken,
+        2017).</div>
+        <br>
+    <div class="cthdua">New kinds of geopolitical consensus would ensure that various countries strive to reduce carbon dioxide emissions within their borders. For instance, in 2014, an agreement to combat climate change was signed between the U.S. and China, the two most
+        polluting countries in the world. China agreed to get 20% of its electric power from the sun, wind, fission, and dams. The U.S. promised to enhance its pollution reduction efforts so that the rate of pollution declines by 2% per year (Hawken,
+        2017).</div>
+        </div>
+    <p>untuk div(1) [ 600-(2*10)-(2*5)=570px ]<br> 
+        untuk div(2) [ 600-(2*30)-(2*10)=520px ]
+    </p>
+    <br><hr>
+    <p>BOX SIZING : suatu elemen agar kita tidak perlu mengkalkulasikan total dimensi</p>
+    <div class="boxsizing">
+    <div class="bssatu">
+        New kinds of geopolitical consensus would ensure that various countries strive to reduce carbon dioxide emissions within their borders. For instance, in 2014, an agreement to combat climate change was signed between the U.S. and China, the two most
+        polluting countries in the world. China agreed to get 20% of its electric power from the sun, wind, fission, and dams. The U.S. promised to enhance its pollution reduction efforts so that the rate of pollution declines by 2% per year (Hawken,
+        2017).</div>
+        <br>
+    <div class="bsdua">New kinds of geopolitical consensus would ensure that various countries strive to reduce carbon dioxide emissions within their borders. For instance, in 2014, an agreement to combat climate change was signed between the U.S. and China, the two most
+        polluting countries in the world. China agreed to get 20% of its electric power from the sun, wind, fission, and dams. The U.S. promised to enhance its pollution reduction efforts so that the rate of pollution declines by 2% per year (Hawken,
+        2017).</div>
+        </div>
+    <p>box sizing akan membuat lebar(width) dari setiap div menjadi 600px walaupun padding dan border berbeda di setiap div </p>
+    
+</body>
+</html>

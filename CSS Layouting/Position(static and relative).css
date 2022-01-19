@@ -1,0 +1,26 @@
+body {
+    background-color: gray;
+}
+
+h1 {
+    border: 3px dashed black;
+    padding: 10px;
+    display: inline-block;
+}
+
+.penjelasan {}
+
+.penjelasan img {
+    max-width: 480px;
+    width: 100%;
+    height: auto;
+    float: left;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid black;
+}
+
+.penjelasan ul {
+    float: left;
+    position: relative;
+}

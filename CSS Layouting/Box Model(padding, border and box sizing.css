@@ -1,0 +1,62 @@
+.paddingdanborder {
+    text-align: justify;
+    width: 300px;
+    height: 300px;
+    background-color: coral;
+    margin: 20px auto;
+    padding-left: 50px;
+    padding-top: 50px;
+    /* padding juga bisa ditulis seperti margin: atas kirikanan bawah; */
+    border-left: 5px solid black;
+    border-right: 10px dashed royalblue;
+}
+.contohboxsizing {
+    width: 600px;
+    margin: 10px auto;
+}
+.cthsatu{
+    background-color: royalblue;
+    padding: 10px;
+    border: 5px solid red;
+    width: 570px; /* 600-(2*10)-(2*5)=570px */
+
+}
+.cthdua{
+    background-color: white;
+    padding: 30px;
+    border: 10px dashed orange;
+    width: 520px; /* 600-(2*30)-(2*10)=570px */
+}
+.boxsizing {
+    width: 600px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    /* box sizing akan membuat lebar(width) dari setiap div menjadi 600px walaupun padding dan border berbeda di setiap div */
+}
+.bssatu{
+    background-color: royalblue;
+    padding: 10px;
+    border: 5px solid red;
+}
+.bsdua{
+    background-color: white;
+    padding: 30px;
+    border: 10px dashed orange; 
+}
+
+/* tambahan */
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    text-align: justify;
+}
+body{
+    background-color: lightgreen;
+}
+strong{
+    color: red;
+}
+h3 {
+    font-weight: bold;
+}

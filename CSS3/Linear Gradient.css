@@ -1,0 +1,49 @@
+.satu .tu {
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    background-color: salmon;
+}
+
+.satu .tu:hover {
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    transition: 0.7s;
+    background-image: linear-gradient(red, #f0d606, rgba(255, 255, 0, 1), green);
+}
+
+.satu .tutu {
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    background-color: salmon;
+}
+
+.satu .tutu:hover {
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    transition: 0.7s;
+    background-image: linear-gradient(45deg, red, green);
+}
+
+
+/* tambahan */
+
+.tu {
+    text-align: center;
+    line-height: 300px;
+    font-weight: bold;
+}
+
+.tutu {
+    text-align: center;
+    line-height: 300px;
+    font-weight: bold;
+}
+
+img {
+    width: 500px;
+    height: 100%;
+}

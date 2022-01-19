@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 FONT FACE</title>
+    <link rel="stylesheet" href="Font Face.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Festive&family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>FONT FACE</h1>
+    <div class="w3-responsive">
+        <table class="ws-table-all notranslate">
+            <tbody>
+                <tr>
+                    <th style="width:20%">Font descriptor</th>
+                    <th style="width:20%">Values</th>
+                    <th style="width:60%">Description</th>
+                </tr>
+                <tr>
+                    <td>font-family</td>
+                    <td><i>name</i></td>
+                    <td>Required. Defines the name of the font.</td>
+                </tr>
+                <tr>
+                    <td>src</td>
+                    <td><i>URL</i></td>
+                    <td>Required. Defines the URL(s) where the font should be downloaded from</td>
+                </tr>
+                <tr>
+                    <td>font-stretch</td>
+                    <td>normal<br> condensed
+                        <br> ultra-condensed
+                        <br> extra-condensed
+                        <br> semi-condensed
+                        <br> expanded
+                        <br> semi-expanded
+                        <br> extra-expanded
+                        <br> ultra-expanded
+                    </td>
+                    <td>Optional. Defines how the font should be stretched. Default value is "normal"</td>
+                </tr>
+                <tr>
+                    <td>font-style</td>
+                    <td>normal<br> italic
+                        <br> oblique
+                    </td>
+                    <td>Optional. Defines how the font should be styled. Default value is "normal"</td>
+                </tr>
+                <tr>
+                    <td>font-weight</td>
+                    <td>normal<br> bold
+                        <br> 100
+                        <br> 200
+                        <br> 300
+                        <br> 400
+                        <br> 500
+                        <br> 600
+                        <br> 700
+                        <br> 800
+                        <br> 900
+                    </td>
+                    <td>Optional. Defines the boldness of the font. Default value is "normal"</td>
+                </tr>
+                <tr>
+                    <td>unicode-range</td>
+                    <td><i>unicode-range</i></td>
+                    <td>Optional. Defines the range of unicode characters the font supports. Default value is "U+0-10FFFF"</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br><br>
+    <div class="penjelasan1">
+        <p>Bisa juga copy script font nya di link<br>
+            <a href="https://fonts.google.com/" target="_blank">https://fonts.google.com/</a><br>
+            <a href="https://www.fontsquirrel.com/" target="_blank">https://www.fontsquirrel.com/</a><br> nanti disisipkan di element head</p>
+    </div>
+    <p><strong>ATAU</strong></p>
+    <div class="penjelasan2">
+        <p>download file font nya dulu lalu<br> @font-face{
+            <br> font-family: "......";<br> src: url('namafile') format('truetype');<br> pakai format jika tipe file .ttf</p>
+    </div>
+    <br>
+    <hr>
+    <div class="satu">
+        <h1>font face dari link disisipkan head</h1>
+        <pre>
+di html
+    {head}
+        {link rel="stylesheet" href="Font Face.css"}
+        {link rel="preconnect" href="https://fonts.googleapis.com"}
+        {link rel="preconnect" href="https://fonts.gstatic.com" crossorigin}
+        {link href="https://fonts.googleapis.com/css2?family=Festive&family=Roboto:wght@100&display=swap" rel="stylesheet"}
+    {/head}{/pre}
+di css
+    .tu {
+            font-family: 'Festive', cursive;
+    }
+        </pre>
+        <div class="tu">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus minus quaerat quia fugiat similique nemo, voluptate, dolorum, ullam ea aut dicta architecto debitis nihil. Eveniet molestias odit dolores nulla reprehenderit ut odio dolorem
+                impedit enim, quaerat nemo minus soluta quae fuga nam officiis unde! Eos sequi laboriosam commodi totam rem accusamus. Iste, suscipit dicta commodi alias placeat eligendi quos facilis accusantium fugit optio beatae ex amet fuga tempora!
+                Repudiandae ipsa, quas harum quaerat, a nihil distinctio modi error placeat quidem porro qui reiciendis aliquam laudantium ratione aut ducimus nemo nostrum, officiis laborum dolorum neque odit sit libero! Blanditiis, quasi eveniet?</p>
+        </div>
+        <hr>
+        <h1>font face dari download file font face</h1>
+        <pre>@font-face {
+            font-family: "terserah";
+            src: url('../file2/Qahiri-Regular.ttf') format('truetype');
+        }
+    
+        .du {
+            font-family: "terserah";
+        }</pre>
+        <div class="du">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora magnam nisi consequuntur. Quam eaque aperiam autem omnis vitae dolores eius obcaecati cum inventore cupiditate recusandae quisquam excepturi quaerat dolor, ab laborum vel consequatur
+                enim. Officia dolore voluptate quasi distinctio porro adipisci suscipit omnis commodi delectus cupiditate ducimus, est eos odit dolorem quo quibusdam, consequuntur, quis recusandae possimus iusto ratione. Est, quaerat eius rerum necessitatibus
+                qui ipsum porro. Error, deserunt aut pariatur neque, minus soluta repellendus consectetur facere non odio quibusdam iste quia odit tenetur commodi placeat recusandae a libero ipsam minima, blanditiis molestiae eum veritatis unde. Aperiam
+                ut distinctio eveniet?</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Layouting DISPLAY</title>
+    <style>
+        .heading {
+            color: red;
+        }
+        
+        .paragraf {
+            background-color: black;
+            color: white;
+        }
+        
+        .paragraf span {
+            font-weight: bold;
+            color: red;
+        }
+        /* untuk span bisa juga langsung pakai class-nya misal .kalimat1{} */
+        
+        .a a {
+            display: inline;
+            /* the default for span */
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+        /* Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element. Also, with display: inline-block, the top and bottom margins/paddings are respected, but with display: inline they are
+not. */
+        
+        .b a {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        /* Also, with display: inline-block, the top and bottom margins/paddings are respected, but with display: inline they are not. */
+        
+        .c a {
+            display: block;
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+        /* Compared to display: block, the major difference is that display: inline-block does not add a line-break after the element, so the element can sit next to other elements. */
+        /* display: none UNTUK MENGHILANGKAN SEBUAH ELEMEN HTML */
+        
+        .
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <h1>tag DIV dan SPAN</h1>
+    </div>
+    <div class="paragraf">
+        <p>New kinds of geopolitical consensus would ensure that various countries strive to reduce carbon dioxide emissions within their borders. For instance, in 2014, an agreement to combat climate change was signed between the US and China, the two most
+            polluting countries in the world.<span class="kalimat1"> China agreed to get 20% of its electric power from the sun, wind, fission, and dams. The US promised to enhance its pollution reduction efforts so that the rate of pollution declines by 2% per year (Hawken, 2017)</span>
+        </p>
+    </div>
+    <br><br>
+    <h6>LIST LINK1</h4>
+        <div class="a">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+            <br><br>
+        </div>
+        <h6>LIST LINK2</h4>
+            <div class="b">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                <a href="#">Link 4</a>
+                <a href="#">Link 5</a>
+            </div>
+            <br><br>
+            <h6>LIST LINK3</h4>
+                <div class="c">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                    <a href="#">Link 4</a>
+                    <a href="#">Link 5</a>
+                </div>
+
+</body>
+
+</html>
+
+/* DEFAULT DIV = BLOCK; SPAN = INLINE */

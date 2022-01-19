@@ -1,0 +1,104 @@
+ .scale p {
+     font-size: 20px;
+     text-align: center;
+ }
+ 
+ .scale .tu {
+     width: 200px;
+     height: 200px;
+     background-color: lightblue;
+     margin: 50px auto 0;
+     transition: 1s;
+ }
+ 
+ .scale .tu:hover {
+     transform: scale(2)
+     /* bisa juga pakai scale(x,y) untuk mengubah ukuran berdasarkan sumbu 
+ ATAU scalex() dan scaley()*/
+ }
+ 
+ .rotate p {
+     font-size: 20px;
+     text-align: center;
+ }
+ 
+ .rotate .tu {
+     width: 200px;
+     height: 200px;
+     background-color: lightblue;
+     margin: 50px auto 0;
+     transition: 1s;
+ }
+ 
+ .rotate .tu:hover {
+     transform: rotate(45deg);
+     /* bisa pakai rotatex() atau rotate(y) */
+ }
+ 
+ .skew p {
+     font-size: 20px;
+     text-align: center;
+ }
+ 
+ .skew .tu {
+     width: 200px;
+     height: 200px;
+     background-color: lightblue;
+     margin: 50px auto 0;
+     transition: 1s;
+ }
+ 
+ .skew .tu:hover {
+     transform: skew(40deg);
+     /* bisa pakai skewx() atau skewy() */
+ }
+ 
+ .translate p {
+     font-size: 20px;
+     text-align: center;
+ }
+ 
+ .translate .tu {
+     width: 200px;
+     height: 200px;
+     background-color: lightblue;
+     margin: 50px auto 0;
+     transition: 1s;
+ }
+ 
+ .translate .tu:hover {
+     transform: translate(50px, 100px);
+     /* artinya 50px ke kanan, 100px ke bawah */
+ }
+ 
+ .gabungan p {
+     font-size: 20px;
+     text-align: center;
+ }
+ 
+ .gabungan .tu {
+     width: 200px;
+     height: 200px;
+     background-color: lightblue;
+     margin: 50px auto 0;
+     transition: 1s;
+     text-align: center;
+     line-height: 200px;
+     color: lightblue;
+ }
+ 
+ .gabungan .tu:hover {
+     transform: scale(3) rotate(360deg);
+     text-transform: capitalize;
+     color: black;
+ }
+ /* tambahan */
+ 
+ body {
+     background-color: grey;
+ }
+ 
+ .penjelasan img {
+     width: 500px;
+     height: 100%;
+ }

@@ -1,0 +1,77 @@
+body{
+    height: 2500px;
+    /* agar bisa di-scroll */
+    background-color: grey;
+}
+/* absolute */
+.absolute div{
+    width: 200px;
+    height: 200px;
+    margin: auto
+}
+.absolute{
+    width: 600px;
+    height: 650px;
+    border: 10px solid green;
+    position: relative;
+    /* kasi relative agar dimensi sama dengan div dua */
+ }
+.satua{
+    background-color: lightgreen;
+}
+.duaa{
+    background-color: violet;
+    position: absolute;
+    /* kalau absolute pasti beda dimensi */
+    top: 0;
+    left: 0;
+}
+.tigaa{
+    background-color: gold;
+
+}
+/* fixed */
+.fixed div{
+    width: 200px;
+    height: 200px;
+
+}
+.fixed{
+    width: 600px;
+    height: 650px;
+    border: 10px solid green;
+    
+}
+.satuf{
+    background-color: lightgreen;
+}
+.duaf{
+    background-color: violet;
+    top: 0;
+    right: 0;
+    position: fixed;
+}
+.tigaf{
+    background-color: gold;
+
+}
+
+
+/* tambahan */
+.penjelasanabso .judulabso{
+    font-weight: bold;
+    font-size: 15px;
+    font-family:arial;  
+}
+.penjelasanfix .judulfix{
+    font-weight: bold;
+    font-size: 15px;
+    font-family:arial;  
+}
+h1{
+    color: white;
+    font-weight: bolder;
+    background-color: black;
+    display:inline-flex ;
+    /* inline-flex agar background hanya fit to text */
+}

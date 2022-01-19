@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Layouting BOX MODEL(margin)</title>
+    <link rel="stylesheet" href="Box Model(margin).css">
+</head>
+
+<body>
+<h1>BOX MODEL: Margin</h1>
+    <hr>
+<h1><strong>Overlapping Margin</strong></h1>
+    <br>
+    <h2>VERTIKAL</h2>
+    <p>untuk vertikal, margin yg dipilih adlah margin yang lebih besar
+        <br>contoh yang div(1) margin bottom:150px lawan div(2) margin-top:50px
+        <br>maka jarak antar div 150px </p>
+    <div class="vertikal satu">1</div>
+    <div class="vertikal dua">2</div>
+    <div class="vertikal tiga">3</div>
+    <br><br>
+    <h2>HORIZONTAL</h2>
+    <p>untuk horizontal, margin akan ditambah;
+        <br>contoh: div(1) margin-right:30px div(2) margin-left:20px; 
+        <br>maka jarak antar div menjadi 50px</p>
+    <br>
+    <div class="horizontal satu">1</div>
+    <div class="horizontal dua">2</div><div class="horizontal tiga">3</div>
+   <!-- div nya tidak enter agar tidak ada jarak antara div -->
+    <br><br><hr>
+<h1><strong>Negative Margin</strong></h1>
+    <p>untuk negatif margin, margin akan menimpa div lain diikuti elemen dibawahnya
+        <br>contoh : div(1) margin-bottom: 30 px lawan div(2) margin-top:-110px
+        <br>maka jarak div(2) akan menimpa div(1) yang diikuti oleh div(3)</p>
+    <div class="negatif satu">1</div>
+    <div class="negatif dua">2</div>
+    <div class="negatif tiga">3</div>
+    <br><br><hr>
+    <h1><strong>Auto Margin</strong></h1>
+    <p>untuk auto, margin akan menyesuaikan ke parent(body)
+        <br>contoh : semua div(1)(2)(3) margin-left:auto, margin-right:auto
+        <br>maka semua div(1)(2)(3) akan berada di tengah halaman/browser</p>
+    <div class="auto satu">1</div>
+    <div class="auto dua">2</div>
+    <div class="auto tiga">3</div>
+    <br><br><hr>
+    <h1><strong>Shorthand Margin</strong></h1>
+    <p>untuk Shorthand, ukuran berlaku untuk setiap sisi margin 
+        <br>contoh : jika div(1) margin:50px
+        <br>maka semua sisi margin 50px
+        <br>shorthand: <span class="halo">atas kirikanan bawah</span>; contoh : div(2): 30px auto 40px</p>
+    <div class="shorthand satu">1</div>
+    <div class="shorthand dua">2</div>
+    <div class="shorthand tiga">3</div>
+</body>
+
+</html>

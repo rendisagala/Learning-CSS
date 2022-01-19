@@ -1,0 +1,141 @@
+.vertikal {
+    display: block;
+}       
+/* default */
+
+.vertikal.satu {
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 150px;
+    margin-right: 50px;
+}
+
+.vertikal.dua {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin-top: 50px;
+}
+
+.vertikal.tiga {
+    width: 50px;
+    height: 50px;
+    background-color: violet;
+}
+
+.horizontal {
+    display: inline-block;
+}
+/* inline-block supaya horizontal 
+    float:left dan clear:none agar tidak ada jarak antar div (contoh:2 dan 3
+    ATAU div nya tidak usah di enter*/
+.horizontal.satu {
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    margin-right: 30px;
+}
+
+.horizontal.dua {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin-left: 20px;
+}
+
+.horizontal.tiga {
+    width: 50px;
+    height: 50px;
+    background-color: violet;
+}
+.negatif {
+
+}
+
+.negatif.satu {
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    margin-bottom: 30px;
+}
+
+.negatif.dua {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin-top: -110px;
+}
+
+.negatif.tiga {
+    width: 50px;
+    height: 50px;
+    background-color: violet;
+}
+
+.auto {
+
+}
+
+.auto.satu {
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    margin-left: auto;
+    margin-right: auto; /*kiri kanan harus auto*/
+}
+
+.auto.dua {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin-left: auto;
+    margin-right: auto; /*kiri kanan harus auto*/
+}
+    
+.auto.tiga {
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+    margin-left: auto;
+    margin-right: auto; /*kiri kanan harus auto*/
+}
+
+.shorthand {
+
+}
+
+.shorthand.satu {
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    margin: 50px;
+}
+
+.shorthand.dua {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin:30px auto 40px;
+}
+
+.shorthand.tiga {
+    width: 50px;
+    height: 50px;
+    background-color: violet;
+}
+/* ----------------------------------------------------------------- */
+/* span */
+.halo {
+    font-style: italic;
+    font-weight: bold;
+    color: red;
+}
+/* biar html rapi */
+strong {
+    color: red;
+    font-weight: bold;
+}
+

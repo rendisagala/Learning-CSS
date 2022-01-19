@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layouting POSITION(absolute and fixed)</title>
+    <link rel="stylesheet" href="Position(absolute and fixed).css">
+</head>
+<body>
+    <div class="penjelasanabso">
+    <ul class="judulabso"><strong>Absolute</strong>
+        <li>Ketika kita menggerakkan elemen dengan posisi <strong>absolute</strong> <br>
+            (menggunakan properti <strong>top, left, bottom</strong> dan<strong> right</strong>, ruang <br>
+            yang ditempati oleh elemen tersebut dianggap<strong> tidak ada</strong></li>
+        <li>Ketika kita menggerakkan elemen dengan posisi absolute, elemen akan bergerak relatif<br>
+            terhadap posisi dari elemen parent-nya, selama elemen parent-nya memiliki posisi yang juga<br>
+             non-static</li>
+        <li>Jika kita memberi properti <strong>top: 0</strong>; dan<strong> left: 0</strong>; maka elemen akan berada di ujung kiri <br>
+            atas dari elemen parent-nya</li>
+    </ul>
+</div>
+<br>
+<h1>position: absolute;</h1>
+    <div class="absolute">
+    <div class="satua"></div>
+    <div class="duaa"></div>
+    <div class="tigaa"></div>
+    </div>
+<br><br><hr>
+<div class="penjelasanfix">
+    <ul class="judulfix"><strong>Fixed</strong> 
+        <li> Ketika kita menggerakkan elemen dengan posisi fixed (menggunakan properti top,<br>
+            left, bottom dan right), ruang yang ditempati oleh elemen tersebut dianggap tidak ada </li>
+        <li>Ketika kita menggerakkan elemen dengan posisi absolute, elemen akan bergerak relatif terhadap window <br>
+            (browser), meskipun elemen parent-nya bernilai non-static • Jika kita memberi properti <br>
+            top: 0; dan left: 0; maka elemen akan berada di ujung kiri atas dari elemen parent-nya </li>
+        <li>elemen akan terkunci dan tidak bergerak dari posisinya meskipun halaman di-scroll</li>
+        </ul>
+</div>
+<h1>position: fixed;</h1>
+    <div class="fixed">
+        <div class="satuf"></div>
+        <div class="duaf"></div>
+        <div class="tigaf"></div>
+    </div>
+</body>
+</html>

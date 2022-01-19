@@ -1,0 +1,64 @@
+body {
+    background-color: grey;
+    height: 2000px;
+}
+
+
+/* z-index */
+
+.z-index {
+    border: 10px solid green;
+    width: 600px;
+    height: 600px;
+    float:
+}
+
+.z-index div {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+.satu1 {
+    background-color: salmon;
+    z-index: 2;
+    /* berarti div satu ada di nomor 2di antara tumpukan div lain */
+    /* semakin besar z-index maka semakin depan div tersebut */
+}
+
+.dua1 {
+    background-color: lightgreen;
+    top: 310px;
+    left: 100px;
+    z-index: 1;
+}
+
+.tiga1 {
+    background-color: royalblue;
+    top: 410px;
+    left: 200px;
+    z-index: 3;
+}
+
+
+/* position lain */
+
+.kotakhitamfixed {
+    background-color: black;
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    left: 0;
+}
+
+.kotakhitamfixed h1 {
+    color: white;
+    text-align: center;
+}
+
+.poslain {
+    height: 50px;
+    width: 100%;
+}

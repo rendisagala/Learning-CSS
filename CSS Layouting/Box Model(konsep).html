@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Layouting BOX MODEL(konsep)</title>
+    <style>
+        body {
+            background-color: lightgreen;
+        }
+        
+        li {
+            font-weight: bold;
+        }
+        
+        .penjelasan {
+            background-color: black;
+            color: white;
+        }
+        
+        dl {
+            font-family: system-ui;
+        }
+        
+        .propertimargin {
+            color: red;
+        }
+        
+        .propertipadding {
+            color: red;
+        }
+        
+        .propertiborder {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>BOX MODEL: KONSEP</h1>
+    <p class="penjelasan"> Box model adalah konsep yang paling utama dari CSS Layouting, jika kalian paham mengenai ini maka akan mudah untuk kalian dalam melakukan pengaturan tata letak elemen pada website kalian.</p>
+    <ol>Ada 4 komponen pada box model
+        <li>margin</li>
+        <dl>area transparan di sekitar kotak (di luar border)</dl>
+        <dl>properti margin : <br><span class="propertimargin">margin-top, margin-right, margin-bottom, margin-left, margin</span></dl>
+        <li>padding</li>
+        <dl>area transparan di dalam kotak (antara <i>content</i> dan border</i>)</dl>
+        <dl>properti padding : <br><span class="propertipadding">padding-top, padding-right, padding-bottom, padding-left, padding</span></dl>
+        <li>border</li>
+        <dl>batas disekeliling <i>content</i> dan padding</dl>
+        <dl>properti border : <br><span class="propertiborder">border-top, border- right, border bottom, border-left, border</span></dl>
+        <li>content</li>
+        <dl>konten sebenarnya di dalam box, bisa berupa text atau gambar</dl>
+    </ol>
+</body>
+
+</html>

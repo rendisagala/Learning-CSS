@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layouting CLEAR</title>
+    <link rel="stylesheet" href="Clear.css">
+</head>
+<body>
+    <h1>Clear (CSS Layouting)</h1>
+    <div class="penjelasan">
+    <p>Cara mengatasi masalah seperti pada Float.html</p>
+    <img src="https://image.slidesharecdn.com/css-layout-4-float-160222014345/95/css-layouting-4-float-30-638.jpg?cb=1456106355">
+    <img src="https://image.slidesharecdn.com/css-layout-4-float-160222014345/95/css-layouting-4-float-31-638.jpg?cb=1456106355">
+    <img src="https://image.slidesharecdn.com/css-layout-4-float-160222014345/95/css-layouting-4-float-32-638.jpg?cb=1456106355">
+    <br>
+    <img src="https://image.slidesharecdn.com/css-layout-4-float-160222014345/95/css-layouting-4-float-34-638.jpg?cb=1456106355">
+    <img src="https://image.slidesharecdn.com/css-layout-4-float-160222014345/95/css-layouting-4-float-36-638.jpg?cb=1456106355">
+    </div>
+    <hr>
+    <h3>Masalah div "keluar" border di Float.html dengan css layouting clear :</h3>
+    <h1> Teknik Overflow</h1>
+    <div class="textwrapping">
+        <img src="windows11.jpg" alt="logo">
+        <p>Lorem ipsum dolor sit amet consectetur  nesciunt accusamus.</p>
+    </div>
+    <br><hr>
+    <h1>Teknik div kosong</h1>
+    <div class="bungkuskotak">
+        <div class="kotak">1</div>
+        <div class="kotak">2</div>
+        <div class="kotak">3</div>
+        <div class="kotak">4</div>
+        <div class="kotak">5</div>
+        <div class="kotak">6</div>
+        <div class="kotak">7</div>
+        <div class="kotak">8</div>
+        <div class="kotak">9</div>
+        <div class="kotak">10</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et corporis doloremque quibusdam quia nostrum, cupiditate tenetur quae minus vero nesciunt culpa quisquam qui inventore praesentium? Dicta error repellendus magnam numquam aperiam eveniet odit dolores. Voluptatem, amet saepe, corporis ratione mollitia sunt aut illo aliquam nobis necessitatibus quos cum sint consectetur nam? Dolor at possimus quos rem, sequi dolorum officia facere ipsa, nostrum nemo blanditiis ipsum corporis nesciunt sit laboriosam. Ut alias nam ex, minus nisi aliquid a corporis eligendi sapiente saepe soluta odio doloremque cum ab laborum ipsa, nobis illum quibusdam placeat accusantium est! Vitae, perspiciatis! Modi itaque exercitationem accusamus!</p>
+    <div class="kosong"></div>
+    </div>
+    <br><hr>
+    <h1>Teknik Micro Clearfix</h1>
+    
+    <div class="mcl cf">
+        <!-- tambahkan cf di class yg mau di clear -->
+        <div class="kiri"></div>
+        <div class="tengah"></div>
+        <div class="kanan"></div>
+    </div>
+    <p class="untukscript">Untuk script css teknik micro clearfix bisa di copy
+        <a href="http://nicolasgallagher.com/micro-clearfix-hack/" target="_blank">disini</a> atau
+    </p>
+    <p class="kodemc">
+       .cf:before,
+       .cf:after {
+           content: " "; /* 1 */
+           display: table; /* 2 */
+       }
+       
+       .cf:after {
+           clear: both;
+       }
+       
+       /**
+        * For IE 6/7 only
+        * Include this rule to trigger hasLayout and contain floats.
+        */
+       .cf {
+           *zoom: 1;
+       }
+    </p>
+</body>
+</html>

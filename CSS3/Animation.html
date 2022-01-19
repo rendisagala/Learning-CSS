@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 ANIMATION</title>
+    <link rel="stylesheet" href="Animation.css">
+</head>
+
+<body>
+    <h1>Animation</h1>
+    <div class="penjelasan">
+        <pre style="font-weight: bold; font-size: 20px;">
+    @keyframes [name] {
+        from{
+            [property-css]      
+        }
+        to{
+            [property-css]      
+        }
+    }
+        </pre>
+        <img src="../img/animationproperty.png">
+        <p>animasi kalau tidak di-hover maka outputnya bekerja saat web baru dibuka.</p>
+    </div>
+    <br><br>
+    <hr><br>
+    <h1 style="color: white;">SENTUH UNTUK MELIHAT PERUBAHAN!!</h1>
+    <hr>
+    <div class="satu">
+        <pre>
+    :before{
+        width: 200px;
+        height: 200px;
+        background-color: salmon;
+    }
+    :hover{
+        animation: namaanimasibebas 2s ease;
+    }
+    @keyframes namaanimasibebas {
+        from {
+            width: 200px;
+        }
+        to {
+            width: 500px;
+        }
+    }
+        </pre>
+        <div class="tu"></div>
+        <br>
+        <hr>
+        <pre>
+    :before{
+        width: 200px;
+        height: 200px;
+        background-color: royalblue;
+    }
+    :hover{
+        animation: namaanimasibebas2 2s ease;
+    }
+    @keyframes namaanimasibebas2 {
+        0% {
+            width: 200px;
+            color: royalblue;
+        }
+        50% {
+            width: 100px;
+            height: 200px;
+            color: red;
+        }
+        100% {
+            width: 500px;
+            color: royalblue;
+        }
+    }
+        </pre>
+        <div class="wa"></div>
+        <br>
+        <hr>
+        <h1>iteration count ( angka / infinite )</h1>
+        <p>disisipkan di kanan berupa angka/infinite yang menunjukkan pengulangan animasi.</p><br>
+        <pre>
+    :before{
+        width: 200px;
+        height: 200px;
+        background-color: royalblue;
+    }
+    :hover{
+        animation: namaanimasibebas3 2s ease 2;
+    }
+    @keyframes namaanimasibebas3 {
+        0% {
+            width: 200px;
+            background-color: royalblue;
+        }
+        50% {
+            width: 500px;
+            height: 200px;
+            background-color: red;
+        }
+        100% {
+            width: 500px;
+            height: 500px;
+            background-color: royalblue;
+        }
+    }
+        </pre>
+        <h3>berarti pengulangan 2 kali</h3>
+        <div class="ga"></div>
+        <br>
+        <hr>
+        <h1>Direction ( normal / reverse / alternate / alternate-reverse )</h1>
+        <br>
+        <pre>
+    :before{
+        width: 200px;
+        height: 200px;
+        background-color: royalblue;
+    }
+    :hover{
+        animation: namaanimasibebas4 2s ease infinite reverse;
+    }
+    @keyframes namaanimasibebas4 {
+        0% {
+            width: 200px;
+            background-color: royalblue;
+        }
+        50% {
+            width: 500px;
+            height: 200px;
+            background-color: red;
+        }
+        100% {
+            width: 500px;
+            height: 500px;
+            background-color: royalblue;
+        }
+    }
+        </pre>
+        <h3>reverse berarti dilakukan terbalik</h3>
+        <div class="pat"></div>
+        <br>
+        <pre>
+    :before{
+        width: 200px;
+        height: 200px;
+        background-color: royalblue;
+    }
+    :hover{
+        animation: namaanimasibebas5 2s ease 3 alternate;
+    }
+    @keyframes namaanimasibebas5 {
+        0% {
+            width: 200px;
+            background-color: royalblue;
+        }
+        50% {
+            width: 500px;
+            height: 200px;
+            background-color: red;
+        }
+        100% {
+            width: 500px;
+            height: 500px;
+            background-color: royalblue;
+        }
+    }
+        </pre>
+        <h3>alternate berarti mulai dari awal dan kembali lagi tergantung pengulangannya</h3>
+        <div class="ma"></div>
+        <br>
+        <pre>
+    :before{
+        width: 200px;
+        height: 200px;
+        background-color: royalblue;
+    }
+    :hover{
+        animation: namaanimasibebas6 2s ease 3 alternate-reverse;
+    }
+    @keyframes namaanimasibebas6 {
+        0% {
+            width: 200px;
+            background-color: royalblue;
+        }
+        50% {
+            width: 500px;
+            height: 200px;
+            background-color: red;
+        }
+        100% {
+            width: 500px;
+            height: 500px;
+            background-color: royalblue;
+        }
+    }
+        </pre>
+        <h3>alternate-reverse sama seperti alternate namun dimulai dari akhir dan tergantung pengulangannya</h3>
+        <div class="nam"></div>
+        <br>
+        <hr>
+        <h1>fill-mode ( none / forwards / backwards / both )</h1>
+        <br>
+        <pre>
+            :before{
+        width: 200px;
+        height: 200px;
+        background-color: royalblue;
+    }
+    :hover{
+        animation: namaanimasibebas7 2s ease 3 alternate forwards;
+    }
+    @keyframes namaanimasibebas7 {
+        0% {
+            width: 200px;
+            background-color: royalblue;
+        }
+        50% {
+            width: 500px;
+            height: 200px;
+            background-color: red;
+        }
+        100% {
+            width: 500px;
+            height: 500px;
+            background-color: royalblue;
+        }
+    }
+        </pre>
+        <h3>forwards berarti animasi berhenti di keadaan akhir, kalau backwards kebalikannya</h3>
+        <div class="juh"></div>
+        <br>
+        <hr>
+        <h1>play-sate ( running / paused)</h1><br>
+        <pre>
+    :before{
+        width: 200px;
+        height: 200px;
+        background-color: royalblue;
+    }
+    :hover{
+        animation: namaanimasibebas8 3s ease infinite alternate paused;
+    }
+    @keyframes namaanimasibebas8 {
+        0% {
+            width: 200px;
+            background-color: royalblue;
+        }
+        50% {
+            width: 500px;
+            height: 200px;
+            background-color: red;
+        }
+        100% {
+            width: 500px;
+            height: 500px;
+            background-color: royalblue;
+        }
+    }
+        </pre>
+        <h3>paused: animasinya terhenti, running: berjalan</h3>
+        <div class="pan"></div>
+    </div>
+
+</body>
+
+</html>

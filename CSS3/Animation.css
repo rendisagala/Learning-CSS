@@ -1,0 +1,230 @@
+.satu .tu {
+    width: 200px;
+    height: 200px;
+    background-color: royalblue;
+}
+
+.satu .tu:hover {
+    animation: namaanimasibebas 2s ease;
+}
+
+@keyframes namaanimasibebas {
+    from {
+        width: 200px;
+    }
+    to {
+        width: 500px;
+    }
+}
+
+.satu .wa {
+    width: 200px;
+    height: 200px;
+    background-color: royalblue;
+}
+
+.satu .wa:hover {
+    animation: namaanimasibebas2 2s ease;
+}
+
+@keyframes namaanimasibebas2 {
+    0% {
+        width: 200px;
+        background-color: royalblue;
+    }
+    50% {
+        width: 500px;
+        height: 200px;
+        background-color: red;
+    }
+    100% {
+        width: 500px;
+        height: 500px;
+        background-color: royalblue;
+    }
+}
+
+.satu .ga {
+    width: 200px;
+    height: 200px;
+    background-color: royalblue;
+}
+
+.satu .ga:hover {
+    animation: namaanimasibebas3 2s ease 2;
+}
+
+@keyframes namaanimasibebas3 {
+    0% {
+        width: 200px;
+        background-color: royalblue;
+    }
+    50% {
+        width: 500px;
+        height: 200px;
+        background-color: red;
+    }
+    100% {
+        width: 500px;
+        height: 500px;
+        background-color: royalblue;
+    }
+}
+
+.satu .pat {
+    width: 200px;
+    height: 200px;
+    background-color: royalblue;
+}
+
+.satu .pat:hover {
+    animation: namaanimasibebas4 2s ease infinite reverse;
+}
+
+@keyframes namaanimasibebas4 {
+    0% {
+        width: 200px;
+        background-color: royalblue;
+    }
+    50% {
+        width: 500px;
+        height: 200px;
+        background-color: red;
+    }
+    100% {
+        width: 500px;
+        height: 500px;
+        background-color: royalblue;
+    }
+}
+
+.satu .ma {
+    width: 200px;
+    height: 200px;
+    background-color: royalblue;
+}
+
+.satu .ma:hover {
+    animation: namaanimasibebas5 2s ease 3 alternate;
+}
+
+@keyframes namaanimasibebas5 {
+    0% {
+        width: 200px;
+        background-color: royalblue;
+    }
+    50% {
+        width: 500px;
+        height: 200px;
+        background-color: red;
+    }
+    100% {
+        width: 500px;
+        height: 500px;
+        background-color: royalblue;
+    }
+}
+
+.satu .nam {
+    width: 200px;
+    height: 200px;
+    background-color: royalblue;
+}
+
+.satu .nam:hover {
+    animation: namaanimasibebas6 2s ease 3 alternate-reverse;
+}
+
+@keyframes namaanimasibebas6 {
+    0% {
+        width: 200px;
+        background-color: royalblue;
+    }
+    50% {
+        width: 500px;
+        height: 200px;
+        background-color: red;
+    }
+    100% {
+        width: 500px;
+        height: 500px;
+        background-color: royalblue;
+    }
+}
+
+.satu .juh {
+    width: 200px;
+    height: 200px;
+    background-color: royalblue;
+}
+
+.satu .juh:hover {
+    animation: namaanimasibebas7 2s ease 3 alternate forwards;
+}
+
+@keyframes namaanimasibebas7 {
+    0% {
+        width: 200px;
+        background-color: royalblue;
+    }
+    50% {
+        width: 500px;
+        height: 200px;
+        background-color: red;
+    }
+    100% {
+        width: 500px;
+        height: 500px;
+        background-color: royalblue;
+    }
+}
+
+.satu .pan {
+    width: 200px;
+    height: 200px;
+    background-color: royalblue;
+}
+
+.satu .pan:hover {
+    animation: namaanimasibebas8 3s ease infinite alternate forwards paused;
+}
+
+@keyframes namaanimasibebas8 {
+    0% {
+        width: 200px;
+        background-color: royalblue;
+    }
+    50% {
+        width: 500px;
+        height: 200px;
+        background-color: red;
+    }
+    100% {
+        width: 500px;
+        height: 500px;
+        background-color: royalblue;
+    }
+}
+
+
+/* tambahan */
+
+body {
+    background-color: grey;
+    height: 9999px;
+}
+
+.penjelasan pre {
+    width: fit-content;
+    border: 1px solid black;
+}
+
+.satu pre {
+    width: fit-content;
+    border: 1px solid black;
+}
+
+.penjelasan img {
+    width: 500px;
+    height: 100%;
+}

@@ -1,0 +1,39 @@
+.satu div {
+    width: 600px;
+    height: 300px;
+    margin: 50px auto;
+    background-color: salmon;
+}
+
+.tu:hover {
+    transition: 0.7s;
+    background-image: radial-gradient(red, green, blue);
+}
+
+.wa:hover {
+    transition: 0.7s;
+    background-image: radial-gradient(circle closest-side, red, blue);
+}
+
+.ga:hover {
+    transition: 0.7s;
+    background-image: radial-gradient(circle farthest-side at top left, red, blue);
+}
+
+
+/* tambahan */
+
+body {
+    background-color: grey;
+}
+
+.satu div {
+    text-align: center;
+    line-height: 300px;
+    font-weight: bold;
+}
+
+img {
+    width: 500px;
+    height: 100%;
+}

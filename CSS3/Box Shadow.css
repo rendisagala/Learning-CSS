@@ -1,0 +1,94 @@
+.satu div {
+    width: 300px;
+    height: 300px;
+    background-color: #39b54a;
+    margin: 50px auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.75);
+    /* <x-offset> <y-offset> <blur> <color> */
+}
+
+.dua div {
+    width: 300px;
+    height: 300px;
+    background-color: #39b54a;
+    margin: 50px auto;
+    box-shadow: 8px 8px 0px 6px rgba(0, 0, 0, 0.75);
+    /* <x-offset> <y-offset> <blur> <spread> <color> */
+}
+
+.watu {
+    width: 300px;
+    height: 300px;
+    background-color: #39b54a;
+    margin: 50px auto;
+    box-shadow: 0px 0px 8px 20px rgba(0, 0, 0, 0.75);
+}
+
+.watu:hover {
+    width: 300px;
+    height: 300px;
+    background-color: #39b54a;
+    margin: 50px auto;
+    box-shadow: 0px 80px 10px -40px rgba(0, 0, 0, 0.5);
+    margin-top: 40px;
+    transition: 0.3s;
+}
+
+.inset {
+    width: 300px;
+    height: 300px;
+    background-color: #39b54a;
+    margin: 50px auto;
+    box-shadow: inset 10px 5px 5px rgba(0, 0, 0, 0.75);
+    /* <inset> <x-offset> <y-offset> <blur> <spread> <color>  
+    <inset> agar shadow berada di dalam elemen*/
+}
+
+.ga {
+    width: 300px;
+    height: 300px;
+    background-color: #39b54a;
+    margin: 50px auto;
+    box-shadow: 50px 0px 0px rgba(255, 0, 0, 0.5), -5px -5px 5px rgba(0, 0, 255, 0.5);
+    /* tinggal tambahkan koma di paling kanan dan sama template nya
+        <x-offset> <y-offset> <blur> <color>, jika ingin tambahkan shadow lagi
+        tinggal berikan koma di paling kanan lagi*/
+}
+
+
+/* tambahan */
+
+.penjelasan img {
+    width: 500px;
+    height: 100%;
+}
+
+.tu {
+    text-align: center;
+    line-height: 300px;
+    font-weight: bold;
+}
+
+.wa {
+    text-align: center;
+    line-height: 300px;
+    font-weight: bold;
+}
+
+.watu {
+    text-align: center;
+    line-height: 300px;
+    font-weight: bold;
+}
+
+.inset {
+    text-align: center;
+    line-height: 300px;
+    font-weight: bold;
+}
+
+.ga {
+    text-align: center;
+    line-height: 300px;
+    font-weight: bold;
+}

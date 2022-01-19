@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 TRANSITION</title>
+    <link rel="stylesheet" href="Transition.css">
+</head>
+
+<body>
+    <h1>Transition</h1>
+    <div class="penjelasan">
+        <p>properti <strong>transition</strong> memungkinkan kita dapat mengubah nilai dari properti HTML.</p>
+        <img src="../img/transition.png">
+        <p>-- >durasi ( s / ms )</p>
+    </div>
+    <br><br>
+    <hr>
+    <h1 style="color: white;">SENTUH UNTUK MELIHAT PERUBAHAN!!</h1><br>
+    <hr><br>
+    <div class="satu">
+        <h1>1. durasi ( s / ms )</h1>
+        <pre style="width: fit-content; border: 1px solid black; font-weight: bold;">
+    :before{
+        background-color: salmon;
+        transition: 1s;
+    }
+    :hover{
+        transform: rotate(180deg);
+    }
+        </pre>
+        <div class="tu">
+            <div id="durasi"></div>
+        </div>
+        <hr>
+        <h1>2. property</h1>
+        <pre style="width: fit-content; border: 1px solid black; font-weight: bold;">
+    :before{
+        background-color: salmon;
+        transition: 1s;
+    }
+    :hover{
+        transform: rotate(720deg);
+        margin-left: 800px;
+        background-color: royalblue;
+    }
+        </pre>
+        <div class="wa">
+            <div id="property"></div>
+        </div>
+        <h2>properti yang bisa di-transisikan</h2>
+        <img src="../img/transition property.png">
+        <img src="../img/transitionpropertinon.png">
+        <pre style="width: fit-content; border: 1px solid black; font-weight: bold;">Contoh = 
+    .property2:before{
+        background-color: salmon;
+        transition: margin-left 1s;
+    }
+    .property2:hover{
+        transform: rotate(720deg);
+        margin-left: 800px;
+        background-color: crimson;
+    }
+        </pre>
+        <div class="ga">
+            <div id="property2"></div>
+        </div>
+        <hr>
+        <img src="../img/transitiontimingfunction.png">
+        <p style="display: inline;">ease(default)</p>
+        <br>
+        <hr>
+        <h1>3. fungsi</h1>
+        <div class="pat">
+            <pre style="width: fit-content; border: 1px solid black; font-weight: bold;">
+    :before{
+        transition: all 1s ease;
+    }
+            </pre>
+            <div class="fungsi fungsi1">ease(default)</div>
+            <pre style="width: fit-content; border: 1px solid black; font-weight: bold;">
+    :before{
+        transition: all 3s ease-in;
+    }
+            </pre>
+            <div class="fungsi fungsi2">ease-in</div>
+            <pre style="width: fit-content; border: 1px solid black; font-weight: bold; ">
+    :before{
+        transition: all 3s ease-out;
+    }
+            </pre>
+            <div class="fungsi fungsi3">ease-out</div>
+            <pre style="width: fit-content; border: 1px solid black; font-weight: bold; ">
+        :before{
+            transition: all 3s ease-in-out;
+    }
+            </pre>
+            <div class="fungsi fungsi4">ease-in-out</div>
+            <pre style="width: fit-content; border: 1px solid black; font-weight: bold; ">
+    :before{
+        transition: all 3s ease-in-linear;
+    }
+            </pre>
+            <div class="fungsi fungsi5">linear</div>
+            <pre style="width: fit-content; border: 1px solid black; font-weight: bold; ">
+    :before{
+        transition: all 3s cubic-bezier(0.24, -0.35, 0.78, 1.46);
+    }
+            </pre>
+            <div class="fungsi fungsi6">cubic-bezier(w,x,y,z)</div>
+        </div>
+        <hr>
+        <h1>4.delay (s / ms)</h1>
+        <p>tinggal menambahkan angka setelah durasi</p>
+        <div class="ma">
+            <pre style="width: fit-content; border: 1px solid black; font-weight: bold; ">
+    :before{
+        transition: 3s 2s;
+    }
+            </pre>
+            <div class="delay delay1"></div>
+            <pre style="width: fit-content; border: 1px solid black; font-weight: bold; ">
+    :before{
+        transition: margin-left 3s, border-radius 5s, transform 3s, background-color 500ms 2s;
+    }
+            </pre>
+            <div class="delay delay2"></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

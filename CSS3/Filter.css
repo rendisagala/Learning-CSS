@@ -1,0 +1,68 @@
+.satu div img {
+    width: 500px;
+    height: 100%;
+    margin-top: 7px;
+    transition: 0.7s;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    position: relative;
+    background-clip: content-box;
+}
+
+.blur img:hover {
+    filter: blur(30px);
+}
+
+.brightness img:hover {
+    filter: brightness(40);
+}
+
+.contrast img:hover {
+    filter: contrast(40);
+}
+
+.saturate img:hover {
+    filter: saturate(40);
+}
+
+.grayscale img:hover {
+    filter: grayscale(40);
+}
+
+.sepia img:hover {
+    filter: sepia(40);
+}
+
+.hue-rotate img:hover {
+    filter: hue-rotate(-100deg);
+}
+
+.invert img:hover {
+    filter: invert(40);
+}
+
+.opacity img:hover {
+    filter: opacity(0.7);
+}
+
+.drop-shadow img:hover {
+    filter: drop-shadow(0 0 100px rgba(100, 0, 0, 1));
+}
+
+
+/* tambahan */
+
+.penjelasan img {
+    width: 500px;
+    height: 100%;
+}
+
+.penjelasan ul {
+    font-family: comic;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
