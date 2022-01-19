@@ -1,0 +1,126 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-family: arial;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/* TANPA FLEXBOX */
+
+.container.one {
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+    margin: 5px auto;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.header {
+    width: 100%;
+    height: 30%;
+    box-sizing: border-box;
+    background-color: rgb(219, 90, 219);
+    float: left;
+}
+
+.aside {
+    width: 40%;
+    height: 25%;
+    box-sizing: border-box;
+    background-color: rgb(69, 108, 226);
+    float: left;
+}
+
+.main {
+    width: 60%;
+    height: 55%;
+    box-sizing: border-box;
+    background-color: rgb(240, 162, 94);
+    float: right;
+}
+
+.nav {
+    width: 40%;
+    height: 30%;
+    box-sizing: border-box;
+    background-color: rgb(226, 85, 85);
+    float: left;
+}
+
+.footer {
+    width: 100%;
+    height: 15%;
+    box-sizing: border-box;
+    background-color: rgb(46, 38, 38);
+    float: left;
+}
+
+
+/* TANPA FLEXBOX - END */
+
+
+/* PAKAI FLEXBOX DAN GRID */
+
+.container.two {
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+    margin: 5px auto;
+    box-sizing: border-box;
+    padding: 5px;
+    display: grid;
+    grid-template-areas: "header header" "aside main" "nav main" "footer footer";
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr 1fr 1.3fr 1fr;
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(219, 90, 219);
+    box-sizing: border-box;
+}
+
+aside {
+    grid-area: aside;
+    background-color: rgb(69, 108, 226);
+}
+
+main {
+    grid-area: main;
+    flex: 1.5;
+    background-color: rgb(240, 162, 94);
+}
+
+nav {
+    grid-area: nav;
+    background-color: rgb(226, 85, 85);
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(46, 38, 38);
+}
+
+
+/* PAKAI FLEXBOX DAN GRID -END */
+
+
+/* tambahan */
+
+pre {
+    color: black;
+    border: 1px solid black;
+    text-align: left;
+    width: fit-content;
+    font-size: 75%;
+}
+
+body {
+    background-color: grey;
+}

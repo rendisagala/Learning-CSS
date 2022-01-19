@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID Dasar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>TANPA FLEXBOX DAN GRID</h1>
+    <pre>
+        body,
+        html {
+            padding: 0;
+            margin: 0;
+            font-size: 20px;
+            font-family: arial;
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        
+        .container.one {
+            width: 600px;
+            height: 600px;
+            border: 1px solid black;
+            margin: 5px auto;
+            box-sizing: border-box;
+            padding: 5px;
+        }
+        
+        .header {
+            width: 100%;
+            height: 30%;
+            box-sizing: border-box;
+            background-color: rgb(219, 90, 219);
+            float: left;
+        }
+        
+        .aside {
+            width: 40%;
+            height: 25%;
+            box-sizing: border-box;
+            background-color: rgb(69, 108, 226);
+            float: left;
+        }
+        
+        .main {
+            width: 60%;
+            height: 55%;
+            box-sizing: border-box;
+            background-color: rgb(240, 162, 94);
+            float: right;
+        }
+        
+        .nav {
+            width: 40%;
+            height: 30%;
+            box-sizing: border-box;
+            background-color: rgb(226, 85, 85);
+            float: left;
+        }
+        
+        .footer {
+            width: 100%;
+            height: 15%;
+            box-sizing: border-box;
+            background-color: rgb(128, 125, 125);
+            float: left;
+        } 
+    </pre>
+    <div class="container one">
+        <div class="header">
+            <div class="container">
+
+                <h1>HEADER</h1>
+            </div>
+        </div>
+        <div class="main">
+            <div class="container">
+
+                <h1>MAIN</h1>
+            </div>
+        </div>
+        <div class="aside">
+            <div class="container">
+
+                <h1>ASIDE</h1>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="container">
+
+                <h1>NAV</h1>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+
+                <h1>FOOTER</h1>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <h1>PAKAI FLEXBOX DAN GRID</h1>
+    <pre>
+
+    </pre>
+    <div class="container two">
+        <header class="headers">
+            <h1>HEADER</h1>
+        </header>
+        <aside class="asides">
+            <h1>ASIDE</h1>
+        </aside>
+        <nav class="navs">
+            <h1>NAV</h1>
+        </nav>
+        <main class="mains">
+            <h1>MAIN</h1>
+        </main>
+        <footer class="footers">
+            <h1>FOOTER</h1>
+        </footer>
+    </div>
+</body>
+
+</html>
